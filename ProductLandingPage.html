@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            background: #ff9800;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .column {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            min-width: 250px;
+        }
+        .features, .pricing, .testimonials {
+            background: #f9f9f9;
+            padding: 60px 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .features h2, .pricing h2, .testimonials h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background: #111;
+            color: #bbb;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .cta {
+            background: #ff9800;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .cta button {
+            background: white;
+            color: #ff9800;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s;
+        }
+        .cta button:hover {
+            background: #ff9800;
+            color: white;
+        }
+        @media (min-width: 768px) {
+            .header {
+                padding: 80px 20px;
+            }
+            .features, .pricing, .testimonials {
+                padding: 80px 40px;
+            }
+            .cta {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Introducing SmartHome</h1>
+        <p>Transform your living experience with our innovative smart home solutions</p>
+    </div>
+    <div class="container">
+        <div class="column">
+            <img src="smarthome.jpeg" alt="SmartHome" style="width:100%;">
+        </div>
+        <div class="column">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Voice Control</li>
+                <li>Energy Monitoring</li>
+                <li>Remote Access</li>
+            </ul>
+        </div>
+    </div>
+    <div class="features">
+        <h2>Features</h2>
+        <p>SmartHome offers a range of features designed to improve your living experience.</p>
+    </div>
+    <div class="pricing">
+        <h2>Pricing</h2>
+        <p>Choose the plan that best suits your needs.</p>
+        <div class="container">
+            <div class="column">
+                <h3>Basic Plan</h3>
+                <p>$9.99/month</p>
+            </div>
+            <div class="column">
+                <h3>Premium Plan</h3>
+                <p>$19.99/month</p>
+            </div>
+            <div class="column">
+                <h3>Enterprise Plan</h3>
+                <p>$49.99/month</p>
+            </div>
+        </div>
+    </div>
+    <div class="cta">
+        <h2>Get Started with SmartHome Today!</h2>
+        <button>Sign Up Now</button>
+    </div>
+    <div class="testimonials">
+        <h2>Customer Testimonials</h2>
+        <p>See what our customers are saying.</p>
+        <div class="container">
+            <div class="column">
+                <p>"SmartHome has completely transformed the way I live!" - Jane Doe</p>
+            </div>
+            <div class="column">
+                <p>"The energy monitoring feature is a game changer!" - John Smith</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 SmartHome Inc.</p>
+    </div>
+</body>
+</html>
